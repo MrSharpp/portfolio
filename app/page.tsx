@@ -134,7 +134,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        hey, I'm leerob 👋
+        hey, I'm Amir Alam 👋
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
         {`I'm a frontend developer, optimist, and community builder. I currently `}
