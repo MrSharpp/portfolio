@@ -1,12 +1,11 @@
 import { dateDiffInDays } from "./utils";
-
-function Badge({ children, ...props }) {
-  return (
-    <div className="flex gap-1 justify-center border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline">
-      {children} &#160;
-    </div>
-  );
-}
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSquareXTwitter,
+  faGithub,
+  faStackOverflow,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Page() {
   return (
@@ -37,6 +36,46 @@ export default function Page() {
           may not be highly active, it remains a valuable project.
         </li>
       </ul>
+      <br />
+
+      <p className="prose prose-neutral dark:prose-invert">
+        Continuing my journey to achieve something impactful in technology for
+        fellow developers.
+      </p>
+      <br />
+      <div className="flex gap-4">
+        <a
+          className="no-underline"
+          href={"https://twitter.com/momrsharp"}
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faSquareXTwitter} width={20} />
+        </a>
+
+        <a
+          className="no-underline"
+          href={"https://github.com/MrSharpp"}
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faGithub} width={20} />
+        </a>
+
+        <a
+          className="no-underline"
+          href={"https://stackoverflow.com/users/11168794/amir-alam"}
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faStackOverflow} width={20} height={23} />
+        </a>
+
+        <a
+          className="no-underline"
+          href={"https://www.linkedin.com/in/amir-alam-44378416b/"}
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faLinkedinIn} width={20} height={23} />
+        </a>
+      </div>
     </section>
   );
 }
